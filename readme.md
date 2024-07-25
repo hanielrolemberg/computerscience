@@ -71,6 +71,6 @@ Thank you for visiting, and I hope these projects are helpful for your learning 
 - **Name**: Haniel Rolemberg
 - **Email**: victorhanielbusiness@gmail.com
 - **LinkedIn**: @hanielrolemberg
-- 
+
 
 Feel free to reach out if you have any questions or just want to connect!
