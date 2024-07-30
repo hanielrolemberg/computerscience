@@ -32,7 +32,7 @@ sudo mysql_secure_installation
 ```
 Follow the prompts to set up your MySQL server, including setting the root password.
 
-Step 2: Install VSCode and Extensions
+## Step 2: Install VSCode and Extensions
 Download and install VSCode.
 
 Install the SQLTools extension:
@@ -41,7 +41,8 @@ Open VSCode.
 Go to the Extensions view (Ctrl+Shift+X).
 Search for SQLTools and install it.
 Install the SQLTools MySQL/MariaDB driver.
-Step 3: Configure MySQL Authentication
+
+## Step 3: Configure MySQL Authentication
 If you encounter authentication errors, you may need to change the MySQL authentication method.
 
 Open a terminal and access MySQL:
@@ -200,6 +201,7 @@ Execute the selected query using Ctrl+Alt+E or right-click and select Run Query.
 ## MySQL Commands Reference
 Here are some common MySQL commands you might find useful:
 
+```sql
 SHOW DATABASES;
 USE database_name;
 SHOW TABLES;
