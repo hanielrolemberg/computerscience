@@ -19,6 +19,9 @@ You have a certain amount of money available for investment and want to maximize
 
 Maximize the total return on investments, considering financial constraints and potential risk factors.
 
+## Model:
+Linear Programming 
+
 ## Model Formulation
 
 ### Decision Variables
