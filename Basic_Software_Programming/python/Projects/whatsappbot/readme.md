@@ -31,7 +31,7 @@ python3 app.py
 
 Distributed under the MIT  license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/hanielrolemberg/)
+[Github](https://github.com/hanielrolemberg/)
 
 ## Contributing
 
