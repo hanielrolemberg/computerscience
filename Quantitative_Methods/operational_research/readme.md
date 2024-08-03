@@ -177,5 +177,5 @@ plt.title('Gráfico de Programação Linear')
 plt.show()
 ```
 
-![Linear Programming Graph](/home/chutzpah/Documentos/github/computerscience/Quantitative_Methods/operational_research/linearprogramming.png)
+![Linear Programming Graph](https://github.com/hanielrolemberg/computerscience/blob/master/Quantitative_Methods/operational_research/linearprogramming.png)
 
