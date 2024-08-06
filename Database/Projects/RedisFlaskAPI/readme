@@ -12,7 +12,7 @@ In this project, I practiced using Redis as a data store in conjunction with Fla
 - **Get Data**: Retrieve the value associated with a key from Redis using a GET request.
 
 ## Installation
-
+ 
 1. **Clone the Repository**
 
    ```sh
