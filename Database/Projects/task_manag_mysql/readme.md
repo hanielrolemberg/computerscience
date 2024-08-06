@@ -46,7 +46,7 @@ This is a simple task manager application built with Flask, MySQL. The applicati
 
 ```
 ## Image
-![First Version](/home/chutzpah/Documentos/github/computerscience/Database/Projects/task_manag_redis/img-manag-v1.png)
+![First Version](https://github.com/hanielrolemberg/computerscience/blob/master/Database/Projects/task_manag_mysql/img-manag-v1.png)
 
 
 ## Data Flow
