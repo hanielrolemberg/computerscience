@@ -19,6 +19,8 @@ This is a simple task manager application built with Flask, MySQL, and Redis. Th
 
 ## Visual Architecture:
 (Layered Architecture)
+
+```LUA
 +-------------------+
 |                   | 
 |        User       | - Presentation Layer
@@ -40,6 +42,8 @@ This is a simple task manager application built with Flask, MySQL, and Redis. Th
 |         |   +---------+
 +---------+
 
+
+```
 ## Data Flow
 
 1. User Request: The user makes a request to the Flask App (for example, to view the list of tasks).
