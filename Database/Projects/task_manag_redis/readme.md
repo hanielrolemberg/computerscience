@@ -43,7 +43,13 @@ This is a simple task manager application built with Flask, MySQL, and Redis. Th
 +---------+
 
 
+
+
 ```
+## Image
+![First Version](/home/chutzpah/Documentos/github/computerscience/Database/Projects/task_manag_redis/img-manag-v1.png)
+
+
 ## Data Flow
 
 1. User Request: The user makes a request to the Flask App (for example, to view the list of tasks).
