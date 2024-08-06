@@ -46,9 +46,8 @@ This is a simple task manager application built with Flask, MySQL, and Redis. Th
 
 
 ```
-## Image
-![First Version](/home/chutzpah/Documentos/github/computerscience/Database/Projects/task_manag_redis/img-manag-v1.png)
-
+## First Version Project's Image
+![First Version](https://github.com/hanielrolemberg/computerscience/blob/master/Database/Projects/task_manag_redis/img-manag-v1.png)
 
 ## Data Flow
 
