@@ -13,9 +13,42 @@ This is a simple task manager application built with Flask, MySQL, and Redis. Th
 
 ## Requirements
 
-- Python 3.x
+- Python (Flask)
 - MySQL
 - **Redis**
+
+## Visual Architecture:
+(Layered Architecture)
++-------------------+
+|                   | 
+|        User       | - Presentation Layer
++---------+---------+
+          |
+          v
++---------+---------+
+|     Flask App     | - Application 
+|                   |
+|                   |
++---------+---------+
+          |
+    +-----+-----+
+    |           |
+    v           v
++---------+   +---------+
+|  MySQL  |   |  Redis  |
+|         |   | (Cache) |   - Data and Cache
+|         |   +---------+
++---------+
+
+## Data Flow
+
+1. User Request: The user makes a request to the Flask App (for example, to view the list of tasks).
+
+2. Redis Cache: The Flask App checks if the result is in the Redis cache. If it is, it returns the result directly.
+3. MySQL Database: If the result is not in the cache, the Flask App queries the MySQL database.
+4. Cache Storage: The result from the MySQL query is stored in Redis for future requests.
+5. User Response: The Flask App sends the response to the user's browser, which displays the information.
+
 
 ## Installation
 
@@ -90,15 +123,17 @@ task_manager/
     ├── index.html
     ├── add_task.html
     ├── update_task.html
+```
 
-
-
+## Notes
 app.py: The main application file.
 config.py: Configuration file for the application.
 requirements.txt: List of required Python packages.
 templates/: Directory containing HTML templates.
-Contributing
+
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-License
+
+## License
 This project is licensed under the MIT License.
