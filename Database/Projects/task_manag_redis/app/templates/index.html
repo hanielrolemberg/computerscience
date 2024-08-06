@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        a {
+            margin-left: 10px;
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: inline;
+        }
+        input, textarea, button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <h2>Tasks</h2>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {{ task.title }} - {% if task.complete %}Complete{% else %}Incomplete{% endif %}
+            <a href="#" onclick="toggleTaskStatus({{ task.id }})">Toggle Status</a>
+            <form action="{{ url_for('main.delete_task', task_id=task.id) }}" method="post" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add Task</h2>
+    <form action="{{ url_for('main.add_task') }}" method="post">
+        <input type="text" name="title" placeholder="Task Title" required>
+        <textarea name="description" placeholder="Task Description"></textarea>
+        <input type="number" name="sprint_id" placeholder="Sprint ID" min="1">
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Add Sprint</h2>
+    <form action="{{ url_for('main.add_sprint') }}" method="post">
+        <input type="text" name="title" placeholder="Sprint Title" required>
+        <textarea name="description" placeholder="Sprint Description"></textarea>
+        <button type="submit">Add Sprint</button>
+    </form>
+
+    <h2>Add Goal</h2>
+    <form action="{{ url_for('main.add_goal') }}" method="post">
+        <input type="text" name="title" placeholder="Goal Title" required>
+        <textarea name="description" placeholder="Goal Description"></textarea>
+        <button type="submit">Add Goal</button>
+    </form>
+
+    <script>
+        function toggleTaskStatus(taskId) {
+            fetch(`/toggle_status/${taskId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Task status:', data.status);
+                // Atualize o status da tarefa na interface do usuário conforme necessário
+                location.reload(); // Recarregue a página para refletir a atualização
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

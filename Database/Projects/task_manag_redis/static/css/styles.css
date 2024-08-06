@@ -1,0 +1,53 @@
+/* Estilos Globais */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contêiner */
+.container {
+    margin-top: 50px;
+}
+
+/* Cartão */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover efeito no cartão */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título do Card */
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #343a40;
+}
+
+/* Texto do Card */
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Ajuste no layout para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+    }
+}
