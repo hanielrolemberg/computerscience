@@ -28,7 +28,7 @@ The Life Management System is a web application designed to help users manage th
 
 1. **Clone the repository**
     ```sh
-    git clone https://github.com/yourusername/life_management_system.git
+    git clone https://github.com/hanielrolemberg/computerscience/tree/master/Basic_Software_Programming/python/Projects/i-manage
     cd life_management_system
     ```
 
