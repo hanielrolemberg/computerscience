@@ -1,29 +1,30 @@
-<!-- /app/templates/create_goal.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Goal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>{{ title }}</h1>
-    <form method="POST">
+    <h1>Create a New Goal</h1>
+    <form method="POST" action = "">
         {{ form.hidden_tag() }}
-        <p>
+        <div>
             {{ form.title.label }}<br>
-            {{ form.title }}<br>
+            {{ form.title(size=32) }}<br>
             {% for error in form.title.errors %}
                 <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
-        </p>
-        <p>
+        </div>
+        <div>
             {{ form.description.label }}<br>
-            {{ form.description }}<br>
+            {{ form.description(rows=10, cols=40) }}<br>
             {% for error in form.description.errors %}
                 <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
-        </p>
-        <p>{{ form.submit }}</p>
+        </div>
+        <button type="submit">Create Goal</button>
     </form>
 </body>
 </html>

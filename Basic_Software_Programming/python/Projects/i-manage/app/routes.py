@@ -1,4 +1,3 @@
-# Defining the Routes and Views
 
 
 # /app/routes.py
@@ -51,7 +50,7 @@ def logout():
 @main.route('/dashboard')
 @login_required
 def dashboard():
-    goals = Goal.query.filter_by(author=current_user)
+    goals = Goal.query.filter_by(author=current_user).all()
     return render_template('dashboard.html', goals=goals)
 
 @main.route('/goal/new', methods=['GET', 'POST'])

@@ -32,5 +32,5 @@ class LoginForm(FlaskForm):
 
 class GoalForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
-    description = TextAreaField('Description')
-    submit = SubmitField('Save')
+    description = TextAreaField('Description', validators=[DataRequired()])
+    submit = SubmitField('Create Goal')
