@@ -2,12 +2,19 @@
 
 This directory contains projects and exercises related to the course **Basic Software Programming**. The purpose of these projects is to apply the concepts learned in this course to real-world scenarios, reinforcing knowledge and skills.
 
-## Projects
+## Projects by Programming Language
 
-- [Project 1](./project1)
-- [Project 2](./project2)
-- [Project 3](./project3)
+- [Projects in Python](https://github.com/hanielrolemberg/computerscience/tree/master/Basic_Software_Programming/python)
+- [Projects in C ](./project2)
+- [Projects in C#](./project3)
+- [Projects in C++ ](./project2)
+- [Projects in Java ](./project2)
+- [Projects in JavaScrip ](./project2)
+- [Projects in Kotlin ](./project2)
+- [Projects in Go ](./project2)
+- [Projects in Dart (Flutter) ](./project2)
 
+  
 ## Objectives
 
 - **Practice**: Reinforce the concepts and skills acquired during the course.
