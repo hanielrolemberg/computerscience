@@ -12,13 +12,13 @@ from datetime import timedelta
 db = SQLAlchemy()
 bcrypt = Bcrypt()
 login_manager = LoginManager()
-login_manager.login_view = 'login'
+login_manager.login_view = 'main.login'
 
 
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'your_secret_key'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost/yourdatabase' #change this line
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost/DB' #change this line
     app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=30)  
     app.config['REMEMBER_COOKIE_DURATION'] = timedelta(days=7)  
 

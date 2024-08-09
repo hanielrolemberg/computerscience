@@ -1,31 +1,63 @@
-<!-- /app/templates/create_goal.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/goal.css') }}">
 </head>
 <body>
-    <h1>{{ title }}</h1>
-    <form method="POST" action="">
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.title.label }}<br>
-            {{ form.title(size=32) }}<br>
-            {% for error in form.title.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.description.label }}<br>
-            {{ form.description(cols=30, rows=4) }}<br>
-            {% for error in form.description.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.submit() }}
-        </p>
-    </form>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">I-Manage</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="{{ url_for('main.index') }}" class="nav-link">Home</a></li>
+                    <li><a href="{{ url_for('main.logout') }}" class="nav-link">Logout</a></li>
+                    <li><a href="{{ url_for('main.switch_user') }}" class="nav-link">Switch Users</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="goal-details">
+        <section class="goal-header">
+            <h1>{{ goal.title if goal else 'Create New Goal' }}</h1> 
+        </section>
+        <section class="goal-content">
+            <form method="POST" action="{{ url_for('main.update_goal', goal_id=goal.id) if goal else url_for('main.new_goal') }}">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    {{ form.title(class_='form-control') }}
+                </div>
+                <div class="form-group"> <br>
+                    <label for="description">Description</label>
+                    {{ form.description(class_='form-control') }}
+                </div>
+                <div class="form-actions"><br>
+                    <button type="submit" class="btn btn-primary">{{ 'Update Goal' if goal else 'Create Goal' }}</button>
+                </div>
+            </form>
+        </section>
+        {% if goal %}
+        <section class="goal-actions">
+            
+            <form action="{{ url_for('main.delete_goal', goal_id=goal.id) }}" method="POST" class="delete-form">
+                {{ form.csrf_token }}
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </section>
+        {% endif %}
+        <section class="goal-back">
+            <a href="{{ url_for('main.dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 I-Manage</p>
+        </div>
+    </footer>
 </body>
 </html>

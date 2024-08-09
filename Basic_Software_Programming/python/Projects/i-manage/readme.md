@@ -2,6 +2,13 @@
 
 The Life Management System is a web application designed to help users manage their goals and track their progress. It is built using Python, Flask, and MySQL, and includes user authentication, goal management, and a dashboard to view and manage goals.
 
+## PrintScreen
+![Index](URL ou caminho para a imagem)
+![LogIn](URL ou caminho para a imagem)
+![SignUP](URL ou caminho para a imagem)
+![Dashboard](URL ou caminho para a imagem)
+
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -11,6 +18,54 @@ The Life Management System is a web application designed to help users manage th
 - [Usage](#usage)
 
 ## Features
+## Front-End Development
+
+*Layout and Design*
+
+- **Header:**
+  - Fixed at the top of the page with navigation links and a logo.
+  - The header is styled with a background color and box-shadow for better visibility.
+
+- **Main Content:**
+  - Centralized with appropriate padding and margin adjustments.
+  - Container for goal details includes shadow and rounded corners for a clean look.
+
+- **Buttons:**
+  - Styled with consistent colors and hover effects.
+  - Buttons include primary, danger, and action styles, with hover transitions for better user experience.
+
+- **Forms:**
+  - Forms for creating, updating, and deleting goals.
+  - Labels and inputs are styled for alignment and readability.
+  - Buttons within forms are centered and have consistent styling.
+
+- **Navigation Links:**
+  - Navigation links styled to remove unwanted shadows and maintain consistency with the overall design.
+  - Links are given a hover effect to enhance user interaction.
+
+*Styling*
+
+- **CSS Variables:**
+  - Utilized CSS variables (`:root`) for primary, secondary, and accent colors to ensure consistency across the application.
+
+- **Responsive Design:**
+  - Layout and components are designed to be responsive and adjust based on screen size.
+
+- **Alignment and Spacing:**
+  - Adjusted margins, padding, and alignment to ensure that elements such as titles, descriptions, and buttons are properly aligned and spaced.
+
+*Changes and Fixes*
+
+- **Button Shadow Removal:**
+  - Adjusted CSS to remove unwanted shadows from navigation buttons.
+
+- **Centralization of Content:**
+  - Ensured that the main content and other elements are centered properly on the page.
+
+- **Title and Description Alignment:**
+  - Ensured that titles and descriptions within forms are aligned correctly.
+
+## Back-End Development
 
 - **User Authentication and Authorization**
 User Registration: Allows new users to sign up for the application.

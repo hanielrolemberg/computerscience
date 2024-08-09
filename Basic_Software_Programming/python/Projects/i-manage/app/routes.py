@@ -78,7 +78,8 @@ def new_goal():
         db.session.commit()
         flash('Seu objetivo foi criado!', 'success')
         return redirect(url_for('main.dashboard'))
-    return render_template('create_goal.html', title='Novo Objetivo', form=form)
+    return render_template('create_goal.html', title='New Goal', form=form)
+
 
 
 @main.route('/goal/<int:goal_id>/update', methods=['GET', 'POST'])
@@ -97,7 +98,8 @@ def update_goal(goal_id):
     elif request.method == 'GET':
         form.title.data = goal.title
         form.description.data = goal.description
-    return render_template('create_goal.html', title='Atualizar Objetivo', form=form)
+    return render_template('create_goal.html', title='Atualizar Objetivo', form=form, goal=goal)
+
 
 @main.route('/goal/<int:goal_id>/delete', methods=['POST'])
 @login_required

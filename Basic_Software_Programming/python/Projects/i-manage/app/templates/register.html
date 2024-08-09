@@ -1,44 +1,27 @@
-<!-- /app/templates/register.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
 </head>
 <body>
-    <h1>Register</h1>
-    <form method="POST">
-        {{ form.hidden_tag() }}
-        <p>
+    <div class="container">
+        <h2>Sign up</h2>
+        <form method="POST" action="{{ url_for('main.register') }}">
+            {{ form.hidden_tag() }}
             {{ form.username.label }}<br>
             {{ form.username }}<br>
-            {% for error in form.username.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
             {{ form.email.label }}<br>
             {{ form.email }}<br>
-            {% for error in form.email.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
             {{ form.password.label }}<br>
             {{ form.password }}<br>
-            {% for error in form.password.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
             {{ form.confirm_password.label }}<br>
             {{ form.confirm_password }}<br>
-            {% for error in form.confirm_password.errors %}
-                <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>{{ form.submit }}</p>
-    </form>
-    <p>Already have an account? <a href="{{ url_for('main.login') }}">Login</a></p>
+            <button type="submit">Sign up</button><br>
+        </form>
+        <a href="{{ url_for('main.login') }}">Already have an account? Log In</a>
+    </div>
 </body>
 </html>

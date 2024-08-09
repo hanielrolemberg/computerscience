@@ -1,0 +1,244 @@
+/* Reset default margin and padding */
+
+
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #0056b3; /* Azul escuro */
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-title h1 {
+    margin: 10;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    
+}
+
+.dashboard-section {
+    padding: 2rem 0;
+    margin-top:10rem 
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top:1rem 
+}
+
+.goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top:2rem 
+}
+
+.goal-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+}
+
+.goal-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    
+}
+
+.goal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+}
+
+.btn-edit, .btn-delete, .btn-add {
+    background-color: var(--btn-color);
+    color: #fff;
+    padding: 0.5rem 1rem; /* Ajuste o padding conforme necessário */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem; /* Use o mesmo tamanho de fonte para ambos */
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5; /* Ajuste a linha de altura para alinhar verticalmente */
+}
+
+.btn-edit:hover, .btn-delete:hover, .btn-add:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/*
+.btn-add {
+    display:block; 
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem; 
+
+}
+*/
+
+.dashboard-section {
+    padding: 2rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #343a40;
+}
+
+.goals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.goal-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 2rem);
+    max-width: 300px;
+}
+
+.goal-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.goal-description {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.goal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background: #0056b3;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+.btn-add {
+    display:flex;
+    width: auto; /* Ajuste para se adequar ao conteúdo */
+    text-align: center;
+    position: relative;
+    top: 2rem; /* Ajusta a posição do botão para baixo */
+    padding: 0.5rem 1rem;
+    background: #495057;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0 auto; 
+}
+
+
+.btn-add:hover {
+    background: #495057dc;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer p {
+    margin: 0; /* Remove a margem padrão do parágrafo para melhor centralização */
+}
