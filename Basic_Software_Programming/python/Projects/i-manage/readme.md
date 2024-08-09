@@ -211,14 +211,14 @@ Feel free to fork this project and submit pull requests. For major changes, plea
 
 
 ## Screens
--Index/Home
+-**Index/Home**
 ![Index](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/index(home).png)
 
--Login
+-**Login**
 ![LogIn](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/login.png)
 
--Signup
+-**Signup**
 ![SignUP](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/signup.png)
 
--Dashboard
+-**Dashboard**
 ![Dashboard](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/dashboard.png)
