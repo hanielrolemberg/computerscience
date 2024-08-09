@@ -18,7 +18,7 @@ login_manager.login_view = 'login'
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'your_secret_key'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://teste:teste@localhost/life_management_system'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost/yourdatabase' #change this line
     app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=30)  
     app.config['REMEMBER_COOKIE_DURATION'] = timedelta(days=7)  
 
