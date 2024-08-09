@@ -8,16 +8,15 @@
 <body>
     <h1>Dashboard</h1>
     <p><a href="{{ url_for('main.new_goal') }}">Create New Goal</a></p>
+    <p><a href="{{ url_for('main.switch_user') }}">Switch Users </a></p>
+    <p><a href="{{ url_for('main.logout') }}">Logout</a></p> <!-- logout -->
     <ul>
         {% for goal in goals %}
             <li>
                 <h2>{{ goal.title }}</h2>
                 <p>{{ goal.description }}</p>
-                <p><a href="{{ url_for('main.update_goal', goal_id=goal.id) }}">Edit</a> | 
+                <p><a href="{{ url_for('main.update_goal', goal_id=goal.id) }}">Editar</a> | 
                 <form action="{{ url_for('main.delete_goal', goal_id=goal.id) }}" method="POST" style="display:inline;">
-                    {% if form %}
-                        {{ form.hidden_tag() }}
-                    {% endif %}
                     <button type="submit">Delete</button>
                 </form></p>
             </li>

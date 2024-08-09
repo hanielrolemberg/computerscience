@@ -11,18 +11,64 @@ The Life Management System is a web application designed to help users manage th
 - [Usage](#usage)
 
 ## Features
-- User Authentication (Registration and Login)
-- Goal Management (Create, Read, Update, Delete goals)
-- Dashboard to view goals
+
+- **User Authentication and Authorization**
+User Registration: Allows new users to sign up for the application.
+Login: Allows users to authenticate and start a session.
+Logout: Allows users to sign out of the application.
+Switch User: Allows the current user to log out and log in with another account.
+
+- **Goal Management**
+Create New Goal: Allows users to create new goals.
+Update Goal: Allows users to update details of an existing goal.
+Delete Goal: Allows users to delete an existing goal.
+View Goals: Displays a list of goals associated with the current user on the dashboard.
+
+- **Navigation**
+Dashboard: The main page after login, where users can view and manage their goals.
+Home (Index): The landing page of the site with links to login and register.
+Navigation Links: Added links for creating a new goal, switching users, and logging out on the dashboard.
+
+- **User Feedback**
+Success and Error Messages: Uses Flask's messaging system to inform the user about the status of their actions (e.g., successful login, failed login, goal created successfully).
+
+- **Templates and Rendering**
+HTML Templates: Uses Jinja2 to render dynamic HTML templates for different pages (login, registration, dashboard, etc.).
+
+- **Security**
+Encrypted Passwords: User passwords are encrypted using bcrypt.
+Access Authorization: Access to protected pages is restricted to authenticated users (e.g., dashboard and goal management).
+
+
 
 ## Technologies Used
-- Python
-- Flask
-- MySQL
-- SQLAlchemy
-- Flask-WTF
-- Flask-Bcrypt
-- Flask-Login
+- Here's a list of the technologies used in my Flask project:
+
+1. Programming Language
+Python: The main programming language used for backend development.
+2. Web Framework
+Flask: The web framework used for building the web application.
+3. Templating Engine
+Jinja2: The templating engine used for rendering HTML templates.
+4. Database
+SQLAlchemy: The ORM (Object-Relational Mapping) library used for database interactions.
+MySQL: The database system used for storing user and goal data.
+5. Password Encryption
+bcrypt: The library used for hashing and verifying passwords.
+6. User Authentication
+Flask-Login: The extension used for managing user sessions and authentication.
+7. Form Handling
+Flask-WTF: An extension used for handling web forms and validation.
+8. Development Tools
+VSCode: The code editor used for development.
+Git: The version control system used for managing source code.
+9. Dependency Management
+pip: The package installer used for managing Python libraries.
+venv: The virtual environment tool used to create isolated Python environments.
+10. Web Server
+Werkzeug: The WSGI server used by Flask for serving the application during development.
+11. Project Management
+GitHub: The platform used for hosting the project's code repository and version control.
 
 ## Setup Instructions
 
