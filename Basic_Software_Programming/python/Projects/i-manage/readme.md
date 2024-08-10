@@ -2,12 +2,8 @@
 
 The Life Management System is a web application designed to help users manage their goals and track their progress. It is built using Python, Flask, and MySQL, and includes user authentication, goal management, and a dashboard to view and manage goals.
 
-## PrintScreen
-![Index](URL ou caminho para a imagem)
-![LogIn](URL ou caminho para a imagem)
-![SignUP](URL ou caminho para a imagem)
-![Dashboard](URL ou caminho para a imagem)
-
+# Present Version 
+**First version**
 
 ## Table of Contents
 - [Features](#features)
@@ -16,6 +12,7 @@ The Life Management System is a web application designed to help users manage th
 - [Topics in Computer Science](#topics-in-computer-science)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
+- [Screens](#screens)
 
 ## Features
 ## Front-End Development
@@ -213,3 +210,17 @@ Feel free to fork this project and submit pull requests. For major changes, plea
 ## License
 
 [MIT](LICENSE)
+
+
+## Screens
+-**Index/Home**
+![Index](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/index(home).png)
+
+-**Login**
+![LogIn](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/login.png)
+
+-**Signup**
+![SignUP](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/signup.png)
+
+-**Dashboard**
+![Dashboard](https://github.com/hanielrolemberg/computerscience/blob/master/Basic_Software_Programming/python/Projects/i-manage/assets/dashboard.png)
