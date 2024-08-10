@@ -2,6 +2,8 @@
 
 The Life Management System is a web application designed to help users manage their goals and track their progress. It is built using Python, Flask, and MySQL, and includes user authentication, goal management, and a dashboard to view and manage goals.
 
+# Present Version 
+**First version**
 
 ## Table of Contents
 - [Features](#features)
