@@ -179,5 +179,3 @@ plt.show()
 
 ![Linear Programming Graph](https://github.com/hanielrolemberg/computerscience/blob/master/Quantitative_Methods/operational_research/linearprogramming.png)
 
-# Aplicação de programação linear
-Modelagem de problemas clássicos de programação linear: fabricação versus compra, problemas de mistura, planejamento, produção e estoques, transporte, transbordo e alocação.
