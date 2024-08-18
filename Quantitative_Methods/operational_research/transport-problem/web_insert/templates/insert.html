@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Distances</title>
+</head>
+<body>
+    <h1>Select a Plant</h1>
+    <form method="post">
+        <label for="plant">Plant:</label>
+        <select name="plant" id="plant">
+            {% for plant in plants %}
+            <option value="{{ plant }}">{{ plant }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if plant %}
+    <h2>Distances from {{ plant }}</h2>
+    <ul>
+        {% for destination, distance in zip(destinations, distances) %}
+        <li>{{ destination }}: {{ distance }} km</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
