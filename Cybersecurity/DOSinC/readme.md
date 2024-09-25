@@ -2,7 +2,7 @@
 
 This is a basic implementation of a Denial of Service (DoS) attack tool written in C. This tool is intended solely for educational purposes to help understand the principles behind DoS attacks and network programming. 
 
-**Important: This software is provided for educational purposes only. Using this tool to attack systems without permission is illegal and unethical. Always ensure you have explicit permission before conducting any form of security testing.**
+**Important: This software is provided for educational purposes only. Using this tool to attack systems without permission is illegal and unethical. Please always ensure you have explicit permission before conducting any security testing.**
 
 ## Overview
 
@@ -27,5 +27,5 @@ To compile and run this tool, you need:
 To compile the code, use the following command:
 
 ```bash
-gcc -o dos_attack dos_attack.c
+gcc -o dos dos.c
 ```
