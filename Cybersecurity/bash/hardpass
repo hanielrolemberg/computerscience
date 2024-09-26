@@ -1,0 +1,3 @@
+#!/bin/bash
+length=16
+openssl rand -base64 $length
