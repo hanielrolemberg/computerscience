@@ -1,0 +1,82 @@
+# Redis and Flask REST API Example
+
+This project demonstrates a simple REST API built using Flask in Python, integrated with Redis for data storage. It showcases how to use Redis for storing and retrieving data through a Flask application.
+
+## Project Overview
+
+In this project, I practiced using Redis as a data store in conjunction with Flask to build a RESTful API. The API includes endpoints to set and get data from Redis.
+
+### Features
+
+- **Set Data**: Store a key-value pair in Redis using a POST request.
+- **Get Data**: Retrieve the value associated with a key from Redis using a GET request.
+
+## Installation
+ 
+1. **Clone the Repository**
+
+   ```sh
+   git clone https://github.com/your-username/RedisFlaskAPI.git
+   cd RedisFlaskAPI
+
+2. Create and Activate a Virtual Environment
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies
+```sh
+pip install -r requirements.txt
+
+```
+
+4. Run Redis Server
+
+```sh
+redis-server
+```
+
+5. Run the flask application
+```python
+python run.py
+```
+
+## API Endpoints
+**Set Data**
+Endpoint: /set
+
+Method: POST
+
+Description: Stores a key-value pair in Redis.
+
+**Get Data**
+Endpoint: /get/<key>
+
+Method: GET
+
+Description: Retrieves the value associated with the specified key from Redis.
+
+## Project Structure
+/RedisFlaskAPI/
+│
+├── venv/
+│   └── ... (virtual environment files)
+│
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│
+├── run.py
+└── requirements.txt
+
+## Dependencies
+Flask
+Redis
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+Practicing Redis and Flask REST API integration.
+
